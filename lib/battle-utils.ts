@@ -621,25 +621,27 @@ export function canMoveWithStatus(statusType: string): boolean {
 
 // Get sound effect for a move
 export function getMoveSoundEffect(moveType: string): string {
+  const defaultSound = "/sounds/attack.mp3"
+
   const soundEffects: Record<string, string> = {
-    normal: "/sounds/normal-hit.mp3",
-    fire: "/sounds/fire-hit.mp3",
-    water: "/sounds/water-hit.mp3",
-    electric: "/sounds/electric-hit.mp3",
-    grass: "/sounds/grass-hit.mp3",
-    ice: "/sounds/ice-hit.mp3",
-    fighting: "/sounds/fighting-hit.mp3",
-    poison: "/sounds/poison-hit.mp3",
-    ground: "/sounds/ground-hit.mp3",
-    flying: "/sounds/flying-hit.mp3",
-    psychic: "/sounds/psychic-hit.mp3",
-    bug: "/sounds/bug-hit.mp3",
-    rock: "/sounds/rock-hit.mp3",
-    ghost: "/sounds/ghost-hit.mp3",
-    dragon: "/sounds/dragon-hit.mp3",
-    dark: "/sounds/dark-hit.mp3",
-    steel: "/sounds/steel-hit.mp3",
-    fairy: "/sounds/fairy-hit.mp3",
+    normal: defaultSound,
+    fire: defaultSound,
+    water: defaultSound,
+    electric: defaultSound,
+    grass: defaultSound,
+    ice: defaultSound,
+    fighting: defaultSound,
+    poison: defaultSound,
+    ground: defaultSound,
+    flying: defaultSound,
+    psychic: defaultSound,
+    bug: defaultSound,
+    rock: defaultSound,
+    ghost: defaultSound,
+    dragon: defaultSound,
+    dark: defaultSound,
+    steel: defaultSound,
+    fairy: defaultSound,
   }
 
   return soundEffects[moveType] || "/sounds/normal-hit.mp3"

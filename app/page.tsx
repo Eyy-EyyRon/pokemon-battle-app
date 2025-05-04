@@ -13,10 +13,10 @@ const POKEBALL_EMPTY_SVG = `data:image/svg+xml,%3Csvg xmlns='public/pokemon-logo
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
-      <div className="relative overflow-hidden bg-indigo-600 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
+      <div className="relative overflow-hidden bg-red-600 text-white">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=500&width=500')] bg-repeat opacity-20"></div>
+          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=500&width=500')] bg-red opacity-20"></div>
         </div>
         <div className="container mx-auto px-4 py-12 md:py-16 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -27,13 +27,13 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <Link href="/battle/create">
-                  <Button size="lg" className="bg-white text-indigo-600 hover:bg-indigo-100">
+                  <Button size="lg" className="border-white text-black bg-white hover:bg-red-200">
                     <Sword className="mr-2 h-5 w-5" />
                     Start Battle
                   </Button>
                 </Link>
                 <Link href="/battle/join">
-                  <Button size="lg" variant="outline" className="border-white text-black hover:bg-indigo-700">
+                  <Button size="lg" variant="outline" className="border-white text-black hover:bg-red-200">
                     <Users className="mr-2 h-5 w-5" />
                     Join Battle
                   </Button>
@@ -66,12 +66,6 @@ export default function Home() {
                   <Button variant="outline" className="border-indigo-200 text-indigo-600 hover:bg-indigo-50">
                     <History className="mr-2 h-4 w-4" />
                     Battle History
-                  </Button>
-                </Link>
-                <Link href="/leaderboard">
-                  <Button variant="outline" className="border-indigo-200 text-indigo-600 hover:bg-indigo-50">
-                    <Trophy className="mr-2 h-4 w-4" />
-                    Leaderboard
                   </Button>
                 </Link>
               </div>
